@@ -8,7 +8,7 @@ SpringBoot &amp; Yeoman
   * prod : use grunt from maven to generate frontal page which will be include in the final packaging
 
 # dev
-mvn spring-boot:run
+ * mvn spring-boot:run
 
 # grunt
 Start the project :
