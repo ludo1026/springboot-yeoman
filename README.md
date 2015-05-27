@@ -12,12 +12,12 @@ Start the application :
  * mvn spring-boot:run
 
 # grunt
-Start the project :
+Start the application with Maven and Grunt :
  * mvn spring-boot:run -Pgrunt
  * cd yo
  * grunt dev
 
 # prod
-Build the project :
+Package the application :
  * mvn package -Pprod
 
