@@ -15,5 +15,5 @@ Start the project :
 
 # prod
 Build the project :
- * mvn spring-boot:run -Pprod
+ * mvn package -Pprod
 
