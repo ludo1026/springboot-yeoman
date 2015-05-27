@@ -2,7 +2,7 @@
 SpringBoot &amp; Yeoman
 
 * yo : yeoman project for front pages
-  * Gruntfile.js : copy the "serve" build task to a new task named "dev" wich does not contain "server:livereload" in its subtasks list 
+  * Gruntfile.js : copy the "serve" build task to a new task named "dev" which does not contain "server:livereload" in its subtasks list 
 * pom.xml : maven pom 
   * dev : use grunt independently to generate frontal pages
   * prod : use grunt from maven to generate frontal page which will be include in the final packaging
