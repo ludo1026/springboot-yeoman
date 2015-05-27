@@ -41,8 +41,8 @@ import org.springframework.web.util.WebUtils;
 @EnableAutoConfiguration
 public class UiApplication extends WebMvcConfigurerAdapter {
 
-	@Value("${false:useGrunt}")
-	private boolean useGrunt;
+	@Value("${useGruntDist}")
+	private boolean useGruntDist;
 
 	public static void main(String[] args) {
 		SpringApplication.run(UiApplication.class, args);
@@ -50,7 +50,7 @@ public class UiApplication extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-	if(!useGrunt) {
+	if(!useGruntDist) {
 		return;
 	}
 
