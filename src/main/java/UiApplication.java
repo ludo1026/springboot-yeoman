@@ -41,7 +41,7 @@ import org.springframework.web.util.WebUtils;
 @EnableAutoConfiguration
 public class UiApplication extends WebMvcConfigurerAdapter {
 
-	@Value("${useGrunt}")
+	@Value("${false:useGrunt}")
 	private boolean useGrunt;
 
 	public static void main(String[] args) {
