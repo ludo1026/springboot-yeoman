@@ -50,23 +50,20 @@ public class UiApplication extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		System.out.println("*******************************************");
-		System.out.println(useGrunt);
-		if(!useGrunt) {
-			return;
-		}
+	if(!useGrunt) {
+		return;
+	}
 
-		// yo: file:///Users/ludovicchaboud/Code/workspace_immo3/myimmo/ui/yo
-		File file = new File("yo");
+	File file = new File("yo");
 
-		String absolutePath;
-		if(file.getAbsolutePath().indexOf('/') == 0) {
+	String absolutePath;
+	if(file.getAbsolutePath().indexOf('/') == 0) {
             absolutePath = "file://" + file.getAbsolutePath();
         } else {
             absolutePath = "file:///" + file.getAbsolutePath();
         }
 
-		String client = absolutePath+"/client/";
+	String client = absolutePath+"/client/";
         String tmp = absolutePath+"/.tmp/";
 
         registry.addResourceHandler("/**")
